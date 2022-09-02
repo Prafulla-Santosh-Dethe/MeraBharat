@@ -1,0 +1,114 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+header{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.29),rgba(0,0,0,0.1)), url('img/taj.jpg') no-repeat center center/cover;
+}
+nav{
+    width: 100%;
+    height: 15vh;
+    background: rgb(103, 102, 102);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+}
+nav .logo{
+    width: 25%;
+    text-align: center;
+}
+nav .manu{
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+
+}
+nav .manu a{
+    width: 25%;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+/* nav .manu a:first-child{
+    color: aquamarine;
+} */
+main{
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+section{
+
+}
+section h3{
+    font-size: 35px ; font-weight: 350; 
+    letter-spacing: 3px;
+    text-shadow: 1px 1px 2px black;
+}
+section h1{
+    margin: 30px 0px 20px 0px;
+    font-size: 55px;
+    font-weight: 700;
+    text-shadow: 2px 1px 5px black;
+    text-transform: uppercase;
+}
+section p{
+    font-size: 25px;
+    word-spacing: 2px;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 1px black;
+}
+section a{
+    padding: 12px 30px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 720;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: all .5s ease;
+
+}
+section .btn1{
+    background-color: white;
+    color: black;
+}
+section .btn1:hover{
+    background-color: rgb(4, 114, 102);
+    color: white;
+}
+section .btn2{
+    background-color: rgb(4, 114, 102);
+    color: white;
+}
+section .btn2:hover{
+    background-color: white;
+    color: black;
+}
+div h1{
+    font-size: 35px;
+}
+.change_content::after{
+      content: '';
+      animation: ani 10s infinite linear;
+      color: rgb(90, 238, 221);
+}
+
+@keyframes ani{
+    0%{content: "Maharashtra"; }
+    20%{content: "Gujrat";}
+    40%{content: "Rajsthan";}
+    60%{content: "Kerela";}
+    80%{content: "Kashmir";}
+    100%{content:"Madhya Pradesh"}
+}
